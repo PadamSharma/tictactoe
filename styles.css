@@ -1,0 +1,32 @@
+body {
+    background-color: #03045e;
+    font-family: "Goldman", cursive;
+}
+h1 {
+    color: #ffffff;
+}
+.container {
+    height: 500px;
+    width: 500px;
+}
+.glow {
+    font-size: 80px;
+    color: #e0fbfc;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 10px #0096c7, 0 0 20px #0096c7, 0 0 30px #48cae4,
+            0 0 40px #48cae4, 0 0 50px #48cae4, 0 0 60px #48cae4,
+            0 0 70px #48cae4;
+    }
+    to {
+        text-shadow: 0 0 20px #0096c7, 0 0 30px #00b4d8, 0 0 40px #00b4d8,
+            0 0 50px #00b4d8, 0 0 60px #00b4d8, 0 0 70px #00b4d8,
+            0 0 80px #00b4d8;
+    }
+}
